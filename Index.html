@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GitHub Pages Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            background-color: #f0f8ff;
+        }
+        h1 {
+            color: #333;
+        }
+        .success {
+            background-color: #d4edda;
+            color: #155724;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎉 GitHub Pages Test Successful!</h1>
+    
+    <div class="success">
+        <h2>✅ If you can see this page, GitHub Pages is working correctly!</h2>
+        <p>Your repository is properly configured and ready for your honey website.</p>
+    </div>
+    
+    <p>Repository URL: <span id="repo-url"></span></p>
+    <p>Current time: <span id="current-time"></span></p>
+    
+    <h3>Next Steps:</h3>
+    <ol style="text-align: left; max-width: 500px; margin: 0 auto;">
+        <li>Confirm this test page loads properly</li>
+        <li>Replace this content with your honey website code</li>
+        <li>Commit the changes</li>
+        <li>Wait 5-10 minutes for deployment</li>
+    </ol>
+
+    <script>
+        // Show current time to prove the page is loading fresh
+        document.getElementById('current-time').textContent = new Date().toLocaleString();
+        
+        // Try to show the current URL
+        document.getElementById('repo-url').textContent = window.location.href;
+    </script>
+</body>
+</html>
